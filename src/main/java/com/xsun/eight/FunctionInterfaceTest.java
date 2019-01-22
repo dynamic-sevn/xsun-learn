@@ -6,6 +6,6 @@ package com.xsun.eight;
  * @author sunhaoran
  */
 @FunctionalInterface
-public interface FunctionInterfaceTest {
-    String accept(String hello) ;
+public interface FunctionInterfaceTest<T> {
+    String accept(T hello) ;
 }
