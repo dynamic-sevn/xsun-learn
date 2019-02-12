@@ -21,4 +21,11 @@ public class LeetCodeTest {
         Assert.assertEquals(1, obj.optimizeLengthOfLongestSubString("bbbbb"));
         Assert.assertEquals(3, obj.optimizeLengthOfLongestSubString("pwwkew"));
     }
+
+    @Test
+    public void threeSumTest(){
+        ThreeSum obj = new ThreeSum() ;
+        int[] nums = {-1, 0, 1, 2, -1, -4} ;
+        System.out.println(obj.threeSum(nums)) ;
+    }
 }
