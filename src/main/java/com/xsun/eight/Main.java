@@ -8,6 +8,7 @@ import java.util.ArrayList;
 import java.util.Date;
 import java.util.List;
 import java.util.UUID;
+import java.util.stream.Collectors;
 
 /**
  * created at 上午11:30, 2019/1/22
@@ -23,6 +24,8 @@ public class Main {
         demo.test(hello -> "[function]" + hello);
         final List<Integer> finalList = new ArrayList<>() ;
         finalList.add(5);
+
+
         System.out.println(finalList);
 
         System.out.println(LocalDateTime.now().withHour(23).withMinute(59).withSecond(59));
