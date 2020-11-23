@@ -1,5 +1,7 @@
 package com.xsun.eight;
 
+import java.util.function.Function;
+
 /**
  * created at 上午10:16, 2019/1/22
  *
@@ -13,5 +15,12 @@ public class Demo<T> {
     }
     public void test(FunctionInterfaceTest<T> function){
         System.out.println(function.accept(data)) ;
+        Function function1 = this::testPrint;
+        System.out.println(function1.getClass());
     }
+
+    private Object testPrint(Object o) {
+        return null ;
+    }
+
 }

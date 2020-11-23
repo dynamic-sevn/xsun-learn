@@ -49,4 +49,21 @@ public class LeetCodeTest {
         addTwoNumbers.addTwoNumbers(p1, p2) ;
 
     }
+
+    @Test
+    public void longestCommonPrefix(){
+        LongestCommonPrefix commonPrefix = new LongestCommonPrefix() ;
+        String[] strs1 = {"flower","flow","flight"} ;
+        String[] strs2 = {"dog","racecar","car"} ;
+        Assert.assertEquals("fl", commonPrefix.longestCommonPrefix(strs1)) ;
+        Assert.assertEquals("", commonPrefix.longestCommonPrefix(strs2));
+    }
+
+    @Test
+    public void checkInClusionTest(){
+        CheckInClusion checkInClusion = new CheckInClusion();
+        Assert.assertTrue(checkInClusion.checkInclusion("ab", "eidbaooo"));
+        Assert.assertFalse(checkInClusion.checkInclusion("ab", "eidboaoo"));
+        Assert.assertTrue(checkInClusion.checkInclusion("adc", "dcda"));
+    }
 }

@@ -8,6 +8,7 @@ import java.util.ArrayList;
 import java.util.Date;
 import java.util.List;
 import java.util.UUID;
+import java.util.function.Function;
 import java.util.stream.Collectors;
 
 /**
@@ -24,7 +25,6 @@ public class Main {
         demo.test(hello -> "[function]" + hello);
         final List<Integer> finalList = new ArrayList<>() ;
         finalList.add(5);
-
 
         System.out.println(finalList);
 
