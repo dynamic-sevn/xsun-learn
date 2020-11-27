@@ -30,4 +30,12 @@ public class SortTest {
         System.out.println(Arrays.toString(arr2));
     }
 
+    @Test
+    public void heapSortTest(){
+        HeapSort.sort(arr);
+        System.out.println(Arrays.toString(arr));
+        HeapSort.sort(arr2);
+        System.out.println(Arrays.toString(arr2));
+    }
+
 }
